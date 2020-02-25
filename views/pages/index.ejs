@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Test</title>
+            <link rel="stylesheet" href="/assets/assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="/assets/assets/css/main.css">
+        </head>
+        <body>
+            <div class="page-content">
+                <% if (locals.error) { %>
+                    <span class="alert alert-danger">
+                        <%= error %>
+                    </span>
+                  <% } %>
+                <form action="" method="POST" class="form-login">
+                    <img src="/assets/images/User_icon_2.png" class="user-page" alt="">
+
+                    <input name="pseudo" type="text" class="form-control">
+                </form>
+                <div class="desc">Veuillez saisir un pseudo pour accéder au forum</div>
+            </div>
+        </body>
+    </html>
